@@ -10,4 +10,3 @@
         <a id="INLOG" href="http://localhost/bro/brofit/inloggen.php">Inloggen</a>
     </div>
 </header>
-test
