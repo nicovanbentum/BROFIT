@@ -88,6 +88,13 @@ body{
 }
 .tabel td{
     padding: 10px 25px;
+    }
+.image{
+    padding: 1px 10px;
 
-
+    background-position: center;
+    margin:auto 300px 25px;
+    text-align: center;
+    font-family: Calibri;
+    position: center;
 }
