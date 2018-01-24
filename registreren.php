@@ -1,9 +1,8 @@
 <html>
-
 <head>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="Style.css">
+<link rel="stylesheet" type="text/css" href="Style.css">
+    <title>LOG IN PAGINA</title>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -19,17 +18,24 @@ include_once("header.html");
     <h1 class="titel">Sportschool Benno L</h1>
 </div>
 <div class="PageTitel">
-    <h1>Inloggen</h1>
+    <h1>Registreren</h1>
 </div>
 
 <div class="loginform">
-  <form method="Post" action="connect.php">
+  <form method="Post">
+      <input type="text" name = "naam" placeholder = "naam" />
+      <br>
+      <input type="text" name = "adres" placeholder = "adres" />
+      <br>
+      <input type="text" name = "woonplaats" placeholder = "woonplaats" />
+      <br>
+      <input type="text" name = "geslacht" placeholder = "geslacht" />
       <br>
       <input type="text" name = "user" placeholder = "gebruikersnaam" />
       <br>
       <input type="password" name = "password" placeholder = "wachtwoord" />
       <br>
-      <input type="submit" name = "submit" value = "log in"/ >
+      <input type="submit" name = "submit" value = "registreer"/ >
   </form>
 </div>
 </body>

@@ -2,33 +2,23 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" type="text/css" href="Style.css">
-    <title>BroFit - Home</title>
+    <title>BS Home</title>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 </head>
 
-<header>
-    <div class="navbar">
-        <a href="http://localhost/SportschoolBenno/Home.html">Home</a>
-        <a href="http://localhost/SportschoolBenno/Sportinzage.html"> Sportinzage</a>
-        <a href="http://localhost/SportschoolBenno/SporttipsEnAdviezen.html">Sporttips en Adviezen</a>
-        <a href="http://localhost/sportschoolBenno/Aanbod.html">Aanbod</a>
-        <a href="http://localhost/sportschoolBenno/Tarieven.html">Tarieven</a>
-        <a href="http://localhost/sportschoolBenno/Contactinformatie.html">Contact Informatie</a>
-        <a id="INLOG" href="http://localhost/sportschoolBenno/registreer.php">Registreren</a>
-        <a id="INLOG" href="http://localhost/sportschoolBenno/inloggen.php">Inloggen</a>
-
-    </div>
-</header>
+<?php
+include_once("header.html");
+?>
 
 <body>
 <div class="imgage">
-    <h1 class="titel">Brofit</h1>
+    <h1 class="titel">Sportschool Benno L</h1>
 </div>
 <div class="PageTitel">
-    <h1> Aanbod</h1>
+    <h1> Sportinzage</h1>
 </div>
 <div class="main">
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tellus mauris, feugiat in porttitor ut, posuere id mi.

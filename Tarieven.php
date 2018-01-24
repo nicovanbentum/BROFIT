@@ -9,19 +9,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 </head>
 
-<header>
-    <div class="navbar">
-        <a href="http://localhost/SportschoolBenno/Home.html">Home</a>
-        <a href="http://localhost/SportschoolBenno/Sportinzage.html"> Sportinzage</a>
-        <a href="http://localhost/SportschoolBenno/SporttipsEnAdviezen.html">Sporttips en Adviezen</a>
-        <a href="http://localhost/sportschoolBenno/Aanbod.html">Aanbod</a>
-        <a href="http://localhost/sportschoolBenno/Tarieven.html">Tarieven</a>
-        <a href="http://localhost/sportschoolBenno/Contactinformatie.html">Contact Informatie</a>
-        <a id="INLOG" href="http://localhost/sportschoolBenno/registreer.php">Registreren</a>
-        <a id="INLOG" href="http://localhost/sportschoolBenno/inloggen.php">Inloggen</a>
-
-    </div>
-</header>
+<?php
+include_once("header.html");
+?>
 
 <body>
 <div class="titel">
