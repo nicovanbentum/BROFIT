@@ -1,4 +1,5 @@
 <?php
+
 function Query($sql, $args = null, $fetch = true, $numrow = false, $lastid = false)
 {
     $db = Connect::getDatabaseObject();
@@ -8,6 +9,7 @@ function Query($sql, $args = null, $fetch = true, $numrow = false, $lastid = fal
             $query->bindValue(":" . $key, $value);
         }
     }
+    $query->execute();
     if ($fetch)
         $ret = $query->fetchAll();
     elseif ($numrow)
