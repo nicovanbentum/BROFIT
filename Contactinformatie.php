@@ -29,7 +29,7 @@ include_once("header.html");
         <h2>Adresgegevens</h2>
         <h3>Amersfoort</h3>
         <p>
-            Utrechtsehbjweg 6<br>
+            Utrechtseweg 6<br>
             3811 NB, Amersfoort<br>
             033 445 1985
         </p>

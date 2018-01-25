@@ -11,8 +11,8 @@ $selWachtwoord=Query($wwselsql, array('gebruikersnaam'=>$gebruikersnaam))[0];
 
 $result=password_verify($_POST['password'], $selWachtwoord['password']);
 
-if(isset($_POST['submit'])){
-    echo $result;
+if(isset($_POST['submit']) and $result == true){
+    echo 'login gelukt';
 }
 
 ?>
