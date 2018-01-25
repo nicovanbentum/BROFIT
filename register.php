@@ -12,7 +12,7 @@ $email=$_POST['email'];
 $valuesRegister = array('username'=>$username, 'password'=>$hashedpw, 'emailadres'=>$email );
 
 if(isset($_POST['submit'])){
-    echo 'submitted';
+    header('Location: registratieSuccess.php');
 }
 
 $sqlRegister = "INSERT INTO user (username, password, emailadres, role, klantid) VALUES (:username, :password, :emailadres, 'user', NULL)";
