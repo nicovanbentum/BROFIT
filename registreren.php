@@ -22,18 +22,20 @@ include_once("header.html");
 </div>
 
 <div class="loginform">
-  <form method="Post">
-      <input type="text" name = "naam" placeholder = "naam" />
+  <form id="registeren" action="register.php" method="Post"
+  accept-charset="UTF-8">
+      <input type="hidden" name='submitted' id='submitted' value='1'/>
+      <input type="text" name = "naam" id="naam" placeholder = "naam" />
       <br>
-      <input type="text" name = "adres" placeholder = "adres" />
+      <input type="text" name = "adres" id="adres" placeholder = "adres" />
       <br>
-      <input type="text" name = "woonplaats" placeholder = "woonplaats" />
+      <input type="text" name = "woonplaats" id="woonplaats" placeholder = "woonplaats" />
       <br>
-      <input type="text" name = "geslacht" placeholder = "geslacht" />
+      <input type="text" name = "email" id="email" placeholder = "e-mail" />
       <br>
-      <input type="text" name = "user" placeholder = "gebruikersnaam" />
+      <input type="text" name = "user" id="username" placeholder = "gebruikersnaam" />
       <br>
-      <input type="password" name = "password" placeholder = "wachtwoord" />
+      <input type="password" name = "password" id="password" placeholder = "wachtwoord" />
       <br>
       <input type="submit" name = "submit" value = "registreer"/ >
   </form>
