@@ -21,7 +21,7 @@ include_once("header.html");
         <h1 id="Kopje"> Home</h1>
     </div>
     <div class="main">
-        <p>Welkom bij Sportschool BroFit. Wij zijn een sportschoolketen verspreidt over 5 locaties in Nederland. U kunt ons vinden in Amersfoort, Amsterdam, Utrecht, Den Haag en Lelystad.
+        <p>Welkom bij Sportschool BroFit. Wij zijn een sportschoolketen verspreid over 5 locaties in Nederland. U kunt ons vinden in Amersfoort, Amsterdam, Utrecht, Den Haag en Lelystad.
             Wij willen u als klant een voordelige en gezellige sportervaring aanbieden. Wij onderscheiden ons van andere sportscholen door middel van ons systeem waarmee u als klant online uw sportvoortgang bij kan houden. Hierdoor kunt u gemakkelijk overzien hoe uw sportvoortgang ervoor staat en hier acties aan koppelen zodat u het meeste uit uw sporttijd kan halen.
             Op onze website kunt u meer informatie onder een aantal koppen vinden. </p>
         <ul>
