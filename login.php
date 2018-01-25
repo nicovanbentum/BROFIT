@@ -6,11 +6,14 @@ require_once("Query.php");
 
 $gebruikersnaam=$_POST['user'];
 
-$wwselsql= "SELECT `password` FROM `user` WHERE `username` LIKE '$gebruikersnaam'";
-$selWachtwoord=Query($wwselsql, null , true, false, false);
+$wwselsql= "SELECT `password` FROM `user` WHERE `username` = :gebruikersnaam";
+$selWachtwoord=Query($wwselsql, array('gebruikersnaam'=>$gebruikersnaam))[0];
 
-if(isset($_POST['submit']) and password_verify('$selWachtwoord', PASSWORD_DEFAULT) == $_POST['password']){
-    echo 'submitted';
+$result=password_verify($_POST['password'], $selWachtwoord['password']);
+
+if(isset($_POST['submit'])){
+    echo $result;
 }
 
 ?>
+
