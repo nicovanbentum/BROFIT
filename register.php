@@ -7,10 +7,9 @@ require_once("Query.php");
 $hashedpw = password_hash($_POST['password'], PASSWORD_DEFAULT);
 
 $username=$_POST['username'];
-$password=$_POST['password'];
 $email=$_POST['email'];
 
-$valuesRegister = array('username'=>$username, 'password'=>$password, 'emailadres'=>$email );
+$valuesRegister = array('username'=>$username, 'password'=>$hashedpw, 'emailadres'=>$email );
 
 if(isset($_POST['submit'])){
     echo 'submitted';

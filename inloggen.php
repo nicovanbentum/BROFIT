@@ -23,7 +23,8 @@ include_once("header.html");
 </div>
 
 <div class="loginform">
-  <form method="Post" action="connect.php">
+  <form id=inloggen method="Post" action="login.php">
+      <input type="hidden" name='submitted' id='submitted' value='1'/>
       <br>
       <input type="text" name = "user" placeholder = "gebruikersnaam" />
       <br>
