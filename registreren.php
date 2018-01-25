@@ -33,7 +33,7 @@ include_once("header.html");
       <br>
       <input type="text" name = "email" id="email" placeholder = "e-mail" />
       <br>
-      <input type="text" name = "user" id="username" placeholder = "gebruikersnaam" />
+      <input type="text" name = "username" id="username" placeholder = "gebruikersnaam" />
       <br>
       <input type="password" name = "password" id="password" placeholder = "wachtwoord" />
       <br>

@@ -9,9 +9,11 @@ if(isset($_POST['submit'])){
 
 $hashedpw = password_hash($_POST['password'], PASSWORD_DEFAULT);
 
-$valuesRegister = array($_POST['klant'], $_POST['adres'], $_POST['woonplaats', $_POST['email'], $_POST['username'], $hashedpw])]
+$valuesRegister = array('username'=>$_POST['username'], 'password'=>$hashedpw, 'emailadres'=>$_POST['email'] );
 
-$sqlRegister = "INSERT INTO klant (naam, adres, woonplaats, email, username, password) VALUES (:naam, :adres, :woonplaats, :email, :username, :password)";
+$sqlRegister = "INSERT INTO user (username, password, emailadres) VALUES (:username, :password, :emailadres)";
 
-Query($sqlRegister, $valuesRegister, false, false, false)
+Query($sqlRegister, $valuesRegister, false, false, true)
+
+
 ?>

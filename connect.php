@@ -7,10 +7,10 @@ class Connect {
 
         if(Connect::$DatabaseObject != null) return Connect::$DatabaseObject;
 
-        $host = $_ENV['DB_HOST'];
-        $dbname = $_ENV['DB_DATABASE'];
-        $username = $_ENV['DB_USERNAME'];
-        $password = $_ENV['DB_PASSWORD'];
+        $host = 'mysql.hostinger.nl';
+        $dbname = 'u307395658_sport';
+        $username = 'u307395658_sport';
+        $password = 'Ww]=poFWw>2O';
 
         $options = array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8');
 
