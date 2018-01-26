@@ -9,7 +9,6 @@ require_once("Query.php");
 $gebruikersnaam=$_POST['user'];
 
 //session data , session_destroy voor logout
-$_SESSION['session_check']=true;
 $_SESSION['gebruikersnaam']=$gebruikersnaam;
 $_SESSION['wachtwoord']=$_POST['password'];
 

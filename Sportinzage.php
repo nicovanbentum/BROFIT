@@ -10,11 +10,7 @@
 </head>
 
 <?php
-if ($_SESSION['session_check'] == true) {
-    include_once("sessionHeader.html");
-} else {
   include_once("header.html");
-}
 ?>
 
 <body>

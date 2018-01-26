@@ -9,18 +9,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 </head>
 
-<?php
-include_once("header.html");
-?>
-
 <body>
 <div class="imgage">
     <h1 class="titel">BroFit</h1>
 </div>
-
-<?php
-include_once("sessionHeader.html");
-?>
 
 <div class="PageTitel">
 
@@ -29,7 +21,15 @@ include_once("sessionHeader.html");
 <div class="main">
     <h1 id="titel">Dashboard</h1>
 
+
 </div>
+
+<?php
+$has_session = session_status() == PHP_SESSION_ACTIVE;
+if ($has_session == true) {
+    include_once("sessionHeader.html");
+}
+?>
 
 </body>
 </html>
