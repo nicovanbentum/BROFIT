@@ -15,7 +15,7 @@ include_once("header.html");
 
 <body>
 <div class="titel">
-    <h1 class="titel">Brofit</h1>
+    <h1 class="titel">BroFit</h1>
 </div>
 <div class="title">
     <h1 id="Kopje"> Aanbod</h1>

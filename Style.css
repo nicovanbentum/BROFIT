@@ -98,3 +98,29 @@ body{
     font-family: Calibri;
     position: center;
 }
+
+div.loginform
+{
+    display: block;
+    text-align: center;
+}
+form
+{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+input {
+    width: 100%;
+}
+
+.banner {
+    width: 100%;
+    display: inline;
+}
+
+.banner > .banner-image {
+    width: 100%;
+    display: inline;
+}

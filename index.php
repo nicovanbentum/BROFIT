@@ -17,6 +17,9 @@ include_once("header.html");
     <div class="titel">
        <img style="max-width: 25%" src="https://i.imgur.com/BcGPsGz.png">
     </div>
+    <div class="banner">
+<img class="banner-image" src="">
+    </div>
     <div class="title">
         <h1 id="Kopje"> Home</h1>
     </div>
