@@ -15,9 +15,9 @@ include_once("header.html");
 
 <body>
 <div class="imgage">
-    <h1 class="titel">Sportschool Benno L</h1>
+    <h1 class="titel">BroFit</h1>
 </div>
-<div class="PageTitel">
+<div class="main">
     <h1> Sportinzage</h1>
 </div>
 <div class="main">

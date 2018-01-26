@@ -13,7 +13,7 @@ $selWachtwoord=Query($wwselsql, array('gebruikersnaam'=>$gebruikersnaam))[0];
 $result=password_verify($_POST['password'], $selWachtwoord['password']);
 
 if(isset($_POST['submit']) and $result == true){
-    header('Location: registratieSuccess.php');
+    header('Location: dashboard.php');
     //session_start();
 }
 

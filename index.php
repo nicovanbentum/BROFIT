@@ -15,7 +15,7 @@ include_once("header.html");
 
 <body>
     <div class="titel">
-        <h1 id="titel">BroFit</h1>
+       <img style="max-width: 25%" src="https://i.imgur.com/BcGPsGz.png">
     </div>
     <div class="title">
         <h1 id="Kopje"> Home</h1>
@@ -49,6 +49,7 @@ include_once("header.html");
             <p>Voor verdere informatie die niet op onze website vermeld staat kunt u contact met ons opnemen. Onder contact informatie kunt u de adresgegevens
                 van al onze locaties vinden en ook ons telefoonnummer en e-mailadres. Hier zijn ook onze openingstijden te vinden.
             </p>
+
     </div>
 
 </body>
