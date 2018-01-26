@@ -9,10 +9,12 @@ $gebruikersnaam=$_POST['user'];
 $wwselsql= "SELECT `password` FROM `user` WHERE `username` = :gebruikersnaam";
 $selWachtwoord=Query($wwselsql, array('gebruikersnaam'=>$gebruikersnaam))[0];
 
+//checkt pw overeenkomst
 $result=password_verify($_POST['password'], $selWachtwoord['password']);
 
 if(isset($_POST['submit']) and $result == true){
-    echo 'login gelukt';
+    header('Location: registratieSuccess.php');
+    //session_start();
 }
 
 ?>

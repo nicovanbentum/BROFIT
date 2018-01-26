@@ -24,7 +24,7 @@ include_once("header.html");
 
         <h2>E-mailadres</h2>
         <p>
-            E-mail: <a href="info@brofit.nl">info@brofit.nl</a>
+            E-mail: <a href="mailto:brofit.info@gmail.com">brofit.info@gmail.com</a>
         </p>
         <h2>Adresgegevens</h2>
         <h3>Amersfoort</h3>
