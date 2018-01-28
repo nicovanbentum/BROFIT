@@ -13,11 +13,11 @@ $selKlantid=Query($wwselsql, array('gebruikersnaam'=>$gebruikersnaam))[0];
 $naam=$_POST['naam'];
 $adres=$_POST['adres'];
 $woonplaats=$_POST['woonplaats'];
-$klantid=$selKlantid;
+$klantid=$selKlantid['klantid'];
 
 $valuesNAW = array('naam'=>$naam, 'adres'=>$adres, 'woonplaats'=>$woonplaats );
 
-$sqlNAW = "UPDATE klant SET (naam, adres, woonplaats) VALUES (:naam, :adres, :woonplaats) WHERE klantid = '$klantid'";
+$sqlNAW = "UPDATE klant WHERE klantid = '$klantid' SET (naam, adres, woonplaats) VALUES (:naam, :adres, :woonplaats)";
 
 Query($sqlNAW, $valuesNAW, false, false, true);
 

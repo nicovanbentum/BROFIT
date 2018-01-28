@@ -46,6 +46,6 @@ if ($has_session == true) {
         <br>
         <input type="text" name = "woonplaats" id="woonplaats" placeholder = "woonplaats" />
         <br>
-
+        <input type="submit" name = "submit" value = "update" />
 </body>
 </html>
