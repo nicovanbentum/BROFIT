@@ -1,12 +1,18 @@
 <?php
+session_start();
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
 require_once("connect.php");
 require_once("Query.php");
 
-$naam=$_SESSION['naam'];
-$adres=$_SESSION['adres'];
-$woonplaats=$_SESSION['woonplaats'];
+$gebruikersnaam=$_SESSION['gebruikersnaam'];
+
+$wwselsql= "SELECT `klantid` FROM `user` WHERE `username` = :gebruikersnaam";
+$selKlantid=Query($wwselsql, array('gebruikersnaam'=>$gebruikersnaam))[0];
+
+$naam=$_POST['naam'];
+$adres=$_POST['adres'];
+$woonplaats=$_POST['woonplaats'];
 $klantid=$_SESSION['klantid'];
 
 $valuesNAW = array('naam'=>$naam, 'adres'=>$adres, 'woonplaats'=>$woonplaats );
@@ -15,7 +21,7 @@ if(isset($_POST['submit'])){
     header('Location: index.php');
 }
 
-$sqlNAW = "INSERT INTO klant WHERE klantid = '$klantid'(naam, adres, woonplaats) VALUES (:naam, :adres, :woonplaats)";
+$sqlNAW = "UPDATE klant SET (naam, adres, woonplaats) VALUES (:naam, :adres, :woonplaats) WHERE klantid = '$klantid'";
 
 Query($sqlNAW, $valuesNAW, false, false, true)
 

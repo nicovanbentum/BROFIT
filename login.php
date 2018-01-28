@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
 require_once("connect.php");
@@ -13,7 +13,6 @@ $_SESSION['wachtwoord']=$_POST['password'];
 
 $wwselsql= "SELECT `password` FROM `user` WHERE `username` = :gebruikersnaam";
 $selWachtwoord=Query($wwselsql, array('gebruikersnaam'=>$gebruikersnaam))[0];
-
 
 
 

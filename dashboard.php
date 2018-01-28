@@ -1,4 +1,5 @@
 <?php
+session_start();
 require_once("connect.php");
 require_once("Query.php");
 $has_session = session_status() == PHP_SESSION_ACTIVE;
