@@ -1,5 +1,4 @@
 <?php
-session_start();
 
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
@@ -15,12 +14,15 @@ $_SESSION['wachtwoord']=$_POST['password'];
 $wwselsql= "SELECT `password` FROM `user` WHERE `username` = :gebruikersnaam";
 $selWachtwoord=Query($wwselsql, array('gebruikersnaam'=>$gebruikersnaam))[0];
 
+
+
+
 //checkt pw overeenkomst
 $result=password_verify($_POST['password'], $selWachtwoord['password']);
 
+//final submit
 if(isset($_POST['submit']) and $result == true){
     header('Location: dashboard.php');
 }
 
 ?>
-

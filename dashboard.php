@@ -1,3 +1,14 @@
+<?php
+require_once("connect.php");
+require_once("Query.php");
+$has_session = session_status() == PHP_SESSION_ACTIVE;
+if ($has_session == true) {
+    include_once("sessionHeader.html");
+}
+
+
+?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -24,12 +35,16 @@
 
 </div>
 
-<?php
-$has_session = session_status() == PHP_SESSION_ACTIVE;
-if ($has_session == true) {
-    include_once("sessionHeader.html");
-}
-?>
+<div class="loginform">
+    <form id="registeren" action="updateNAW.php" method="Post"
+          accept-charset="UTF-8">
+        <input type="hidden" name='submitted' id='submitted' value='1'/>
+        <input type="text" name = "naam" id="naam" placeholder = "naam" />
+        <br>
+        <input type="text" name = "adres" id="adres" placeholder = "adres" />
+        <br>
+        <input type="text" name = "woonplaats" id="woonplaats" placeholder = "woonplaats" />
+        <br>
 
 </body>
 </html>
