@@ -7,7 +7,11 @@ require_once("Query.php");
 
 $gebruikersnaam=$_POST['user'];
 
+$selsql= "SELECT klantid FROM user WHERE username = :gebruikersnaam";
+$selKlantid=Query($selsql, array('gebruikersnaam'=>$gebruikersnaam))[0];
+
 //session data , session_destroy voor logout
+$_SESSION['klantid']=$selKlantid['klantid'];
 $_SESSION['gebruikersnaam']=$gebruikersnaam;
 $_SESSION['wachtwoord']=$_POST['password'];
 

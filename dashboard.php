@@ -8,6 +8,12 @@ if(isset($_SESSION['gebruikersnaam'])) {
 } else {
     include_once("header.html");
 }
+
+$klantid=$_SESSION['klantid'];
+$valuesArray=array('klantid'=>$klantid);
+$selNAWSql="SELECT naam, adres, woonplaats FROM klant WHERE klantid=:klantid";
+$klantinfo=Query($selNAWSql, $valuesArray)[0];
+
 ?>
 
 <!doctype html>
@@ -41,7 +47,9 @@ if(isset($_SESSION['gebruikersnaam'])) {
     </form>
 </div>
 
-<div class="sportTabel">
+<p><?php
+    print_r($klantinfo, true)
+    ?></p>
 
 </div>
 </body>
