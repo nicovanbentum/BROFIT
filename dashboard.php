@@ -26,17 +26,11 @@ if ($has_session == true) {
     <img style="max-width: 25%" src="https://i.imgur.com/BcGPsGz.png">
 </div>
 
-<div class="main">
-    <h1 id="titel">Dashboard</h1>
-
-
-</div>
-
-<div class="updateNAW">
+<div class="form-style-6">
     <form id="registeren" action="updateNAW.php" method="Post"
           accept-charset="UTF-8">
+        <h1>NAW Gegevens</h1>
         <input type="hidden" name='submitted' id='submitted' value='1'/>
-        <label for="naam">Naam:</label>
         <input type="text" name = "naam" id="naam" placeholder = "naam" />
         <br>
         <input type="text" name = "adres" id="adres" placeholder = "adres" />

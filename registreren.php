@@ -17,13 +17,11 @@ include_once("header.html");
 <div class="titel">
     <img style="max-width: 25%" src="https://i.imgur.com/BcGPsGz.png">
 </div>
-<div class="titel">
-    <h1>Registreren</h1>
-</div>
 
-<div class="loginform">
+<div class="form-style-6">
   <form id="registeren" action="register.php" method="Post"
   accept-charset="UTF-8">
+      <h1>REGISTREREN</h1>
       <input type="hidden" name='submitted' id='submitted' value='1'/>
       <input type="text" name = "naam" id="naam" placeholder = "naam" />
       <br>

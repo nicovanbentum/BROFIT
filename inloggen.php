@@ -17,12 +17,10 @@ include_once("header.html");
 <div class="titel">
     <img style="max-width: 25%" src="https://i.imgur.com/BcGPsGz.png">
 </div>
-<div class="titel">
-    <h1>Inloggen</h1>
-</div>
 
-<div class="loginform">
+<div class="form-style-6">
   <form id=inloggen method="Post" action="login.php">
+      <h1>INLOGGEN</h1>
       <input type="hidden" name='submitted' id='submitted' value='1'/>
       <br>
       <input type="text" name = "user" placeholder = "gebruikersnaam" />
