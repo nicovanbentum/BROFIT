@@ -22,40 +22,10 @@ if(isset($_SESSION['gebruikersnaam'])) {
 <div class="titel">
     <img style="max-width: 25%" src="https://i.imgur.com/BcGPsGz.png">
 </div>
-<div class="main">
+<div class="sportschema" style="text-align:center">
     <h1> Sportschema</h1>
-</div>
-<div class="main">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tellus mauris, feugiat in porttitor ut, posuere id mi.
-        Nulla ultrices commodo commodo. Aenean eu pulvinar sapien. Morbi molestie libero lorem, non ornare ipsum egestas elementum.
-        Aenean erat ligula, egestas in pellentesque ac, rutrum quis magna. Maecenas quis dui neque. Proin molestie pharetra arcu et vestibulum.
-        Integer tempor elit at odio lacinia, ac ultricies urna laoreet. Praesent in turpis at mi dapibus suscipit. Maecenas nec ante at urna accumsan euismod a ac orci.
-        Sed luctus urna et neque lobortis, id pretium libero posuere. Pellentesque blandit varius molestie. Vivamus tellus neque, ultrices et tortor id, placerat congue massa.
-        Aliquam sit amet commodo felis. Nullam malesuada pellentesque dictum.</p>
-
-    <p>In hac habitasse platea dictumst. Proin ultricies scelerisque odio, id commodo risus volutpat at.
-        Morbi pharetra ante quis neque venenatis tempus. Integer eu lectus quis nisl maximus vulputate cursus eu dui.
-        Curabitur a mattis tortor. Sed ullamcorper libero faucibus justo pretium, eu tempus sapien hendrerit.
-        Nam eleifend quam id tellus ullamcorper eleifend. Phasellus congue velit id augue ullamcorper, laol maximus vulputate cursus eu dui.
-        mcorper eleifend. Phasellus congue velit id augue ullamcorper, laol maximus vulputate cursus eu dui.
-        Curabitur a mattis tortorlibero faucibus justo pretium, eu tempus sapien hendrerit.
-        Nam eleifend quam id tellus ullamcorper eleifend. Phasellus congue velit id augue ullamcorper, laol maximus vulputate cursus eu dui.
-        mcorper eleifend. Phasellus congue velit id augue ullamcorper, laol maximus vulputate cursus eu dui.
-        Curabitur a mattis tortorlibero faucibus justo pretium, eu tempus sapien hendrerit.
-        Nam eleifend quam id tellus ullamcorper eleifend. Phasellus congue velit id augue ullamcorper, laol maximus vulputate cursus eu dui.
-        mcorper eleifend. Phasellus congue velit id augue ullamcorper, laol maximus vulputate cursus eu dui.
-        Curabitur a mattis tortorlibero faucibus justo pretium, eu tempus sapien hendrerit.
-        Nam eleifend quam id tellus ullamcorper eleifend. Phasellus congue velit id augue ullamcorper, laol maximus vulputate cursus eu dui.
-        mcorper eleifend. Phasellus congue velit id augue ullamcorper, laol maximus vulputate cursus eu dui.
-        Curabitur a mattis tortor. Sed ullamcorper libero faucibus justo pretium, eu tempus sapien hendrerit.
-        Nam eleifend quam id tellus ullamcorper eleifend. Phasellus congue velit id augue ullamcorper, laol maximus vulputate cursus eu dui.
-        Curabitur a mattis tortor. Sed ullamcorper
-        Nam eleifend quam id tellus ullamcorper eleifend. Phasellus congue velit id augue ullamcorper, laol maximus vulputate cursus eu dui.
-        Curabitur a mattis tortor. Sed ullamcorper libero faucibus justo pretium, eu tempus sapien hendrerit.
-        Nam eleifend quam id tellus ullamcorper eleifend. Phasellus congue velit id augue ullamcorper, laol maximus vulputate cursus eu dui.
-        Curabitur a mattis tortor. Sed ullamcorper libero faucibus justo pretium, eu tempus sapien hendrerit.
-        Nam eleifend quam id tellus ullamcorper eleifend. Phasellus congue velit iddui.
-        Curabitur a mattis tortor. Sed ullamcorper libero faucibus justo pretium, eu tempus sapien hendrerit..</p>
+    <iframe width="500" height="365" frameborder="1" scrolling="no" src="https://hogeschoolutrecht-my.sharepoint.com/personal/bas_gaastra_student_hu_nl/_layouts/15/WopiFrame.aspx?sourcedoc={ba478311-6297-47b1-9e12-5eebf53ba7b5}&action=embedview&wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True&wdHideSheetTabs=True">
+    </iframe>
 </div>
 
 </body>

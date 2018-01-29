@@ -156,3 +156,10 @@ form
 input {
     width: 100%;
 }
+.sportschema {
+    font-family:Calibri;
+}
+.sum {
+    font-family:Calibri;
+    text-align:center;
+}
