@@ -23,7 +23,7 @@ $sqlNAW = "UPDATE klant SET naam=:naam, adres=:adres, woonplaats=:woonplaats WHE
 Query($sqlNAW, $valuesNAW, false, false, true);
 
 if(isset($_POST['submit'])){
-    header('Location: index.php');
+    header('Location: dashboard.php');
 }
 
 ?>

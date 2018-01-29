@@ -14,10 +14,10 @@ include_once("header.html");
 
 <body>
 
-<div class="imgage">
-    <h1 class="titel">Sportschool Benno L</h1>
+<div class="titel">
+    <img style="max-width: 25%" src="https://i.imgur.com/BcGPsGz.png">
 </div>
-<div class="PageTitel">
+<div class="Titel">
     <h1>Registratie gelukt.</h1>
 </div>
 

@@ -23,11 +23,11 @@ include_once("header.html");
       <h1>INLOGGEN</h1>
       <input type="hidden" name='submitted' id='submitted' value='1'/>
       <br>
-      <input type="text" name = "user" placeholder = "gebruikersnaam" />
+      <input required type="text" name = "user" placeholder = "gebruikersnaam" />
       <br>
-      <input type="password" name = "password" placeholder = "wachtwoord" />
+      <input required type="password" name = "password" placeholder = "wachtwoord" />
       <br>
-      <input type="submit" name = "submit" value = "log in"/ >
+      <input required type="submit" name = "submit" value = "log in"/ >
   </form>
 </div>
 </body>
