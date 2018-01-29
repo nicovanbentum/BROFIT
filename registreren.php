@@ -31,6 +31,8 @@ include_once("header.html");
       <br>
       <input type="text" name = "woonplaats" id="woonplaats" placeholder = "woonplaats" />
       <br>
+      <input type="text" name = "geslacht" id="geslacht" placeholder = "geslacht" />
+      <br>
       <input type="text" name = "email" id="email" placeholder = "e-mail" />
       <br>
       <input type="text" name = "username" id="username" placeholder = "gebruikersnaam" />

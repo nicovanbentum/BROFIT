@@ -11,24 +11,24 @@ $email=$_POST['email'];
 $naam=$_POST['naam'];
 $adres=$_POST['adres'];
 $woonplaats=$_POST['woonplaats'];
+$geslacht=$_POST['geslacht'];
 
-$valuesRegister = array('username'=>$username, 'password'=>$hashedpw, 'emailadres'=>$email );
+$valuesRegister2 = array('naam'=>$naam, 'adres'=>$adres, 'woonplaats'=>$woonplaats, 'geslacht'=>$geslacht);
+$sqlRegister2 = "INSERT INTO klant (naam, adres, woonplaats, geslacht, lidsinds) VALUES (:naam, :adres, :woonplaats, :geslacht, NOW())";
+
+Query($sqlRegister2, $valuesRegister2, false, false, true);
+
+$wwselsql= "SELECT `klantid` FROM `klant` WHERE `naam` = :naam";
+$selKlantid=Query($wwselsql, array('naam'=>$naam))[0];
+$klantid=$selKlantid['klantid'];
+
+$valuesRegister = array('username'=>$username, 'password'=>$hashedpw, 'emailadres'=>$email, 'role'=>'role', 'klantid'=>$klantid );
+$sqlRegister = "INSERT INTO user (username, password, emailadres, role, klantid) VALUES (:username, :password, :emailadres, :role, :klantid)";
+
+Query($sqlRegister, $valuesRegister, false, false, true);
 
 if(isset($_POST['submit'])){
     header('Location: registratieSuccess.php');
 }
-
-$sqlRegister = "INSERT INTO user (username, password, emailadres, role, klantid) VALUES (:username, :password, :emailadres, 'user', NULL)";
-
-$wwselsql= "SELECT `klantid` FROM `user` WHERE `username` = :gebruikersnaam";
-$selKlantid=Query($wwselsql, array('gebruikersnaam'=>$username))[0];
-$klantid=$selKlantid['klantid'];
-
-$valuesRegister2 = array('naam'=>$naam, 'adres'=>$adres, 'woonplaats'=>$woonplaats, 'email'=>$email, 'klantid'=>$klantid);
-$sqlRegister2 = "INSERT INTO klant(naam, adres, woonplaats, email, klantid) VALUES (:naam, :adres, :woonplaats, :email, :klantid)";
-
-
-Query($sqlRegister, $valuesRegister, false, false, true);
-Query($sqlRegister2, $valuesRegister2, false, false, true);
 
 ?>
