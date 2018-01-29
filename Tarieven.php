@@ -15,7 +15,7 @@ include_once("header.html");
 
 <body>
 <div class="titel">
-    <h1 class="titel">BroFit</h1>
+    <img style="max-width: 25%" src="https://i.imgur.com/BcGPsGz.png">
 </div>
 
 <div class="main">

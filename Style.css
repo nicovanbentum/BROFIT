@@ -32,6 +32,17 @@ body{
     background: #ff0000;
     color: white;
 }
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: Calibri;
+}
 .titel{
     display:block;
     background-color:white;
@@ -139,14 +150,4 @@ form
 }
 input {
     width: 100%;
-}
-
-.banner {
-    width: 100%;
-    display: inline;
-}
-
-.banner > .banner-image {
-    width: 100%;
-    display: inline;
 }

@@ -14,8 +14,8 @@
 ?>
 
 <body>
-<div class="imgage">
-    <h1 class="titel">BroFit</h1>
+<div class="titel">
+    <img style="max-width: 25%" src="https://i.imgur.com/BcGPsGz.png">
 </div>
 <div class="main">
     <h1> Sportinzage</h1>

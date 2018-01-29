@@ -22,14 +22,10 @@ if ($has_session == true) {
 </head>
 
 <body>
-<div class="imgage">
-    <h1 class="titel">BroFit</h1>
+<div class="titel">
+    <img style="max-width: 25%" src="https://i.imgur.com/BcGPsGz.png">
 </div>
 
-<div class="PageTitel">
-
-
-</div>
 <div class="main">
     <h1 id="titel">Dashboard</h1>
 

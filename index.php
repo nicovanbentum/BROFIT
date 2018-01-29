@@ -5,7 +5,7 @@
     <title>BroFit - Home</title>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 </head>
 
@@ -17,11 +17,12 @@ include_once("header.html");
     <div class="titel">
        <img style="max-width: 25%" src="https://i.imgur.com/BcGPsGz.png">
     </div>
-    <div class="banner">
-<img class="banner-image" src="">
-    </div>
     <div class="title">
         <h1 id="Kopje"> Home</h1>
+    </div>
+    <div style="text-align:center">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/_dCtNLMQ07E" frameborder="1" allow="autoplay; encrypted-media" allowfullscreen>
+        </iframe>
     </div>
     <div class="main">
         <p>Welkom bij Sportschool BroFit. Wij zijn een sportschoolketen verspreid over 5 locaties in Nederland. U kunt ons vinden in Amersfoort, Amsterdam, Utrecht, Den Haag en Lelystad.

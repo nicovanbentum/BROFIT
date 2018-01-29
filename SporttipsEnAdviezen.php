@@ -14,44 +14,29 @@ include_once("header.html");
 ?>
 
 <body>
-<div class="imgage">
-    <h1 class="titel">BroFit</h1>
+<div class="titel">
+    <img style="max-width: 25%" src="https://i.imgur.com/BcGPsGz.png">
 </div>
 <div class="PageTitel">
 
 </div>
 <div class="main">
     <h1 id="titel"> Sporttips en Adviezen</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tellus mauris, feugiat in porttitor ut, posuere id mi.
-        Nulla ultrices commodo commodo. Aenean eu pulvinar sapien. Morbi molestie libero lorem, non ornare ipsum egestas elementum.
-        Aenean erat ligula, egestas in pellentesque ac, rutrum quis magna. Maecenas quis dui neque. Proin molestie pharetra arcu et vestibulum.
-        Integer tempor elit at odio lacinia, ac ultricies urna laoreet. Praesent in turpis at mi dapibus suscipit. Maecenas nec ante at urna accumsan euismod a ac orci.
-        Sed luctus urna et neque lobortis, id pretium libero posuere. Pellentesque blandit varius molestie. Vivamus tellus neque, ultrices et tortor id, placerat congue massa.
-        Aliquam sit amet commodo felis. Nullam malesuada pellentesque dictum.</p>
+</div>
 
-    <p>In hac habitasse platea dictumst. Proin ultricies scelerisque odio, id commodo risus volutpat at.
-        Morbi pharetra ante quis neque venenatis tempus. Integer eu lectus quis nisl maximus vulputate cursus eu dui.
-        Curabitur a mattis tortor. Sed ullamcorper libero faucibus justo pretium, eu tempus sapien hendrerit.
-        Nam eleifend quam id tellus ullamcorper eleifend. Phasellus congue velit id augue ullamcorper, laol maximus vulputate cursus eu dui.
-        mcorper eleifend. Phasellus congue velit id augue ullamcorper, laol maximus vulputate cursus eu dui.
-        Curabitur a mattis tortorlibero faucibus justo pretium, eu tempus sapien hendrerit.
-        Nam eleifend quam id tellus ullamcorper eleifend. Phasellus congue velit id augue ullamcorper, laol maximus vulputate cursus eu dui.
-        mcorper eleifend. Phasellus congue velit id augue ullamcorper, laol maximus vulputate cursus eu dui.
-        Curabitur a mattis tortorlibero faucibus justo pretium, eu tempus sapien hendrerit.
-        Nam eleifend quam id tellus ullamcorper eleifend. Phasellus congue velit id augue ullamcorper, laol maximus vulputate cursus eu dui.
-        mcorper eleifend. Phasellus congue velit id augue ullamcorper, laol maximus vulputate cursus eu dui.
-        Curabitur a mattis tortorlibero faucibus justo pretium, eu tempus sapien hendrerit.
-        Nam eleifend quam id tellus ullamcorper eleifend. Phasellus congue velit id augue ullamcorper, laol maximus vulputate cursus eu dui.
-        mcorper eleifend. Phasellus congue velit id augue ullamcorper, laol maximus vulputate cursus eu dui.
-        Curabitur a mattis tortor. Sed ullamcorper libero faucibus justo pretium, eu tempus sapien hendrerit.
-        Nam eleifend quam id tellus ullamcorper eleifend. Phasellus congue velit id augue ullamcorper, laol maximus vulputate cursus eu dui.
-        Curabitur a mattis tortor. Sed ullamcorper
-        Nam eleifend quam id tellus ullamcorper eleifend. Phasellus congue velit id augue ullamcorper, laol maximus vulputate cursus eu dui.
-        Curabitur a mattis tortor. Sed ullamcorper libero faucibus justo pretium, eu tempus sapien hendrerit.
-        Nam eleifend quam id tellus ullamcorper eleifend. Phasellus congue velit id augue ullamcorper, laol maximus vulputate cursus eu dui.
-        Curabitur a mattis tortor. Sed ullamcorper libero faucibus justo pretium, eu tempus sapien hendrerit.
-        Nam eleifend quam id tellus ullamcorper eleifend. Phasellus congue velit iddui.
-        Curabitur a mattis tortor. Sed ullamcorper libero faucibus justo pretium, eu tempus sapien hendrerit..</p>
+<div style="text-align:center">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/xJBqbv8GRZ4" frameborder="1" allow="autoplay; encrypted-media" allowfullscreen>
+    </iframe>
+</div>
+
+<div style="text-align:center">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/kxCdXia2oJw" frameborder="1" allow="autoplay; encrypted-media" allowfullscreen>
+    </iframe>
+</div>
+
+<div style="text-align:center">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/IYqsWAjvEbI" frameborder="1" allow="autoplay; encrypted-media" allowfullscreen>
+    </iframe>
 </div>
 
 </body>
