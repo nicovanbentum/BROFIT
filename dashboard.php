@@ -36,7 +36,7 @@ if ($has_session == true) {
 
 </div>
 
-<div class="loginform">
+<div class="updateNAW">
     <form id="registeren" action="updateNAW.php" method="Post"
           accept-charset="UTF-8">
         <input type="hidden" name='submitted' id='submitted' value='1'/>
@@ -47,5 +47,11 @@ if ($has_session == true) {
         <input type="text" name = "woonplaats" id="woonplaats" placeholder = "woonplaats" />
         <br>
         <input type="submit" name = "submit" value = "update" />
+    </form>
+</div>
+
+<div class="sportTabel">
+
+</div>
 </body>
 </html>

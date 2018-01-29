@@ -111,6 +111,32 @@ form
     margin-right: auto;
     text-align: left;
 }
+
+div.updateNAW
+{
+    display: block;
+    text-align: left;
+}
+form
+{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+div.sportTabel
+{
+    display: block;
+    text-align: right;
+}
+form
+{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
 input {
     width: 100%;
 }
