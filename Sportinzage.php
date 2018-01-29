@@ -10,7 +10,11 @@
 </head>
 
 <?php
-  include_once("header.html");
+if(isset($_SESSION)) {
+    include_once("sessionHeader.html");
+} else {
+    include_once("header.html");
+}
 ?>
 
 <body>

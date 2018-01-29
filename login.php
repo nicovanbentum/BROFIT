@@ -15,7 +15,6 @@ $wwselsql= "SELECT `password` FROM `user` WHERE `username` = :gebruikersnaam";
 $selWachtwoord=Query($wwselsql, array('gebruikersnaam'=>$gebruikersnaam))[0];
 
 
-
 //checkt pw overeenkomst
 $result=password_verify($_POST['password'], $selWachtwoord['password']);
 

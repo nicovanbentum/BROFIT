@@ -18,7 +18,7 @@ $klantid=$selKlantid['klantid'];
 //update klant met nieuwe NAW gegevens
 $valuesNAW = array('naam'=>$naam, 'adres'=>$adres, 'woonplaats'=>$woonplaats, 'klantid'=>$klantid);
 
-$sqlNAW = "UPDATE klant SET naam=:naam, adres=:adres, woonplaats=:woonplaats, WHERE klantid=:klantid";
+$sqlNAW = "UPDATE klant SET naam=:naam, adres=:adres, woonplaats=:woonplaats WHERE klantid=:klantid";
 
 Query($sqlNAW, $valuesNAW, false, false, true);
 
