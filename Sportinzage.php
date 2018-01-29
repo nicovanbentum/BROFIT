@@ -10,7 +10,8 @@
 </head>
 
 <?php
-if(isset($_SESSION)) {
+session_start();
+if(isset($_SESSION['gebruikersnaam'])) {
     include_once("sessionHeader.html");
 } else {
     include_once("header.html");
@@ -22,7 +23,7 @@ if(isset($_SESSION)) {
     <img style="max-width: 25%" src="https://i.imgur.com/BcGPsGz.png">
 </div>
 <div class="main">
-    <h1> Sportinzage</h1>
+    <h1> Sportschema</h1>
 </div>
 <div class="main">
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tellus mauris, feugiat in porttitor ut, posuere id mi.

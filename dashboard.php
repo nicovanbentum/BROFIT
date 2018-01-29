@@ -36,13 +36,14 @@ if ($has_session == true) {
     <form id="registeren" action="updateNAW.php" method="Post"
           accept-charset="UTF-8">
         <input type="hidden" name='submitted' id='submitted' value='1'/>
+        <label for="naam">Naam:</label>
         <input type="text" name = "naam" id="naam" placeholder = "naam" />
         <br>
         <input type="text" name = "adres" id="adres" placeholder = "adres" />
         <br>
         <input type="text" name = "woonplaats" id="woonplaats" placeholder = "woonplaats" />
         <br>
-        <input type="submit" name = "submit" value = "update" />
+        <input type="submit" name = "submit" value = "gegevens bijwerken" />
     </form>
 </div>
 

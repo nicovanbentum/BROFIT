@@ -10,7 +10,12 @@
 </head>
 
 <?php
-include_once("header.html");
+session_start();
+if(isset($_SESSION['gebruikersnaam'])) {
+    include_once("sessionHeader.html");
+} else {
+    include_once("header.html");
+}
 ?>
 
 <body>
@@ -24,19 +29,10 @@ include_once("header.html");
         <iframe width="560" height="315" src="https://www.youtube.com/embed/_dCtNLMQ07E" frameborder="1" allow="autoplay; encrypted-media" allowfullscreen>
         </iframe>
     </div>
-    <div class="main">
+    <div class="info">
         <p>Welkom bij Sportschool BroFit. Wij zijn een sportschoolketen verspreid over 5 locaties in Nederland. U kunt ons vinden in Amersfoort, Amsterdam, Utrecht, Den Haag en Lelystad.
             Wij willen u als klant een voordelige en gezellige sportervaring aanbieden. Wij onderscheiden ons van andere sportscholen door middel van ons systeem waarmee u als klant online uw sportvoortgang bij kan houden. Hierdoor kunt u gemakkelijk overzien hoe uw sportvoortgang ervoor staat en hier acties aan koppelen zodat u het meeste uit uw sporttijd kan halen.
             Op onze website kunt u meer informatie onder een aantal koppen vinden. </p>
-        <ul>
-            <li>Sportinzage</li>
-            <li>Sporttips en Adviezen</li>
-            <li>Aanbod</li>
-            <li>Tarieven</li>
-            <li>Contact informatie</li>
-        </ul>
-    </div>
-    <div class="info">
         <h3>Sportinzage</h3>
             <p>Door middel van tabellen en grafieken uw sportvoortgang weergeven.
                 Dit kunnen wij doen dankzij de samenwerking met onze database waar na het sporten uw gegevens in worden opgeslagen.</p>
