@@ -23,7 +23,7 @@ foreach($faciliteitenArray as $key=>$faciliteit){
     $hoeveelheden[$key] = Query($selAantalSQL, $values);
 }
 $sql = "SELECT AVG(a.hoeveelheid) as gemiddeld,  f.naam as fnaam FROM activiteit a LEFT JOIN faciliteit f ON f.faciliteitid = a.faciliteitid WHERE klantid=:klantid GROUP BY a.faciliteitid";
-$average = Query($sql, array('klantid'=>$klantid))
+$average = Query($sql, array('klantid'=>$klantid))[0];
 ?>
 
 <!doctype html>
@@ -41,6 +41,7 @@ $average = Query($sql, array('klantid'=>$klantid))
 <div class="titel">
     <img style="max-width: 25%" src="https://i.imgur.com/BcGPsGz.png">
 </div>
+
 <?php
     foreach($hoeveelheden as $key=>$value){
 ?>
@@ -60,7 +61,19 @@ $average = Query($sql, array('klantid'=>$klantid))
     }
 ?>
 </div>
-<p><?php echo highlight_string("<?php\n\$data =\n" . var_export($average, true) . ";\n?>"); ?></p>
+
+<table>
+    <tr>
+        <th>Machine</th>
+        <th>Gemiddelde</th>
+    </tr>
+    <tr>
+        <td><?= $average['fnaam'] ?></td>
+        <td><?= round($average['gemiddeld']) ?></td>
+    </tr>
+</table>
+
+<!--<p>--><?php /*echo highlight_string("<?php\n\$data =\n" . var_export($average, true) . ";\n?>"); */?><!--</p>-->
 
 </div>
 
@@ -72,7 +85,8 @@ $average = Query($sql, array('klantid'=>$klantid))
 </html>
 <style>
     table, td, th{
-        border: 1px solid black;
+        padding: 5px;
         margin: auto;
+        font-family: Calibri;
     }
 </style>
