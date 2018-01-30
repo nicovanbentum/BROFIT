@@ -1,4 +1,6 @@
 <?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 session_start();
 require_once("connect.php");
 require_once("Query.php");
@@ -11,9 +13,17 @@ if(isset($_SESSION['gebruikersnaam'])) {
 
 $klantid=$_SESSION['klantid'];
 $klantidArray=array('klantid'=>$klantid);
-$selAantalSQL="SELECT hoeveelheid FROM activiteit WHERE klantid=:klantid";
-$aantalArray=Query($selAantalSQL, $klantidArray);
-
+$selAantalSQL="SELECT a.*, f.naam as fnaam FROM activiteit a LEFT JOIN faciliteit f ON f.faciliteitid = a.faciliteitid WHERE klantid=:klantid AND a.faciliteitid = :faciliteitid";
+//$aantalArray=Query($selAantalSQL, $klantidArray);
+$faciliteiten = "SELECT * FROM faciliteit";
+$faciliteitenArray = Query($faciliteiten);
+$hoeveelheden = array();
+foreach($faciliteitenArray as $key=>$faciliteit){
+    $values = array('klantid'=>$klantid, 'faciliteitid'=>$faciliteit['faciliteitid']);
+    $hoeveelheden[$key] = Query($selAantalSQL, $values);
+}
+$sql = "SELECT AVG(a.hoeveelheid) as gemiddeld,  f.naam as fnaam FROM activiteit a LEFT JOIN faciliteit f ON f.faciliteitid = a.faciliteitid WHERE klantid=:klantid GROUP BY a.faciliteitid";
+$average = Query($sql, array('klantid'=>$klantid))
 ?>
 
 <!doctype html>
@@ -31,9 +41,38 @@ $aantalArray=Query($selAantalSQL, $klantidArray);
 <div class="titel">
     <img style="max-width: 25%" src="https://i.imgur.com/BcGPsGz.png">
 </div>
-
-<p><?php print_r($aantalArray, false); ?></p>
+<?php
+    foreach($hoeveelheden as $key=>$value){
+?>
+    <table>
+        <tr>
+            <th>Machine</th>
+            <th>Aantal</th>
+        </tr>
+        <?php foreach($value as $k=>$v){ ?>
+            <tr>
+                <td><?= $v['fnaam']?></td>
+                <td><?= $v['hoeveelheid'] ?></td>
+            </tr>
+        <?php } ?>
+    </table>
+<?php
+    }
+?>
+</div>
+<p><?php echo highlight_string("<?php\n\$data =\n" . var_export($average, true) . ";\n?>"); ?></p>
 
 </div>
+
+<div style="text-align:center">
+<a href="/brofit/voortgang.php" class="button">Update</a>
+</div>
+
 </body>
 </html>
+<style>
+    table, td, th{
+        border: 1px solid black;
+        margin: auto;
+    }
+</style>

@@ -25,6 +25,9 @@ $result=password_verify($_POST['password'], $selWachtwoord['password']);
 //final submit
 if(isset($_POST['submit']) and $result == true){
     header('Location: buttonsDashboard.php');
+} else {
+    session_destroy();
+    header('location: inloggen.php');
 }
 
 ?>
