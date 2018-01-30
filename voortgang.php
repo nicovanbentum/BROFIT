@@ -2,10 +2,18 @@
 session_start();
 require_once("connect.php");
 require_once("Query.php");
-$has_session = session_status() == PHP_SESSION_ACTIVE;
-if ($has_session == true) {
+
+if(isset($_SESSION['gebruikersnaam'])) {
     include_once("sessionHeader.html");
+} else {
+    include_once("header.html");
 }
+
+$klantid=$_SESSION['klantid'];
+$klantidArray=array('klantid'=>$klantid);
+$selAantalSQL="SELECT hoeveelheid FROM activiteit WHERE klantid=:klantid";
+$aantalArray=Query($selAantalSQL, $klantidArray);
+
 ?>
 
 <!doctype html>
@@ -24,7 +32,7 @@ if ($has_session == true) {
     <img style="max-width: 25%" src="https://i.imgur.com/BcGPsGz.png">
 </div>
 
-<div class="sportTabel">
+<p><?php print_r($aantalArray, false); ?></p>
 
 </div>
 </body>

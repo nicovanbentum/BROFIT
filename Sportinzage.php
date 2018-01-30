@@ -22,11 +22,9 @@ if(isset($_SESSION['gebruikersnaam'])) {
 <div class="titel">
     <img style="max-width: 25%" src="https://i.imgur.com/BcGPsGz.png">
 </div>
-<div class="sportschema" style="text-align:center">
-    <h1> Sportschema</h1>
-    <iframe width="500" height="365" frameborder="1" scrolling="no" src="https://hogeschoolutrecht-my.sharepoint.com/personal/bas_gaastra_student_hu_nl/_layouts/15/WopiFrame.aspx?sourcedoc={ba478311-6297-47b1-9e12-5eebf53ba7b5}&action=embedview&wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True&wdHideSheetTabs=True">
-    </iframe>
+<div class="sum">
+    <h1>Sportschema</h1>
+    <img height="300" width="425" src="https://i.imgur.com/qZNL24m.png">
 </div>
-
 </body>
 </html>

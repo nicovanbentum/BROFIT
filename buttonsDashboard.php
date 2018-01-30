@@ -27,8 +27,9 @@ if(isset($_SESSION['gebruikersnaam'])) {
     <img style="max-width: 25%" src="https://i.imgur.com/BcGPsGz.png">
 </div>
 <div style="text-align:center">
-<a href="/brofit/dashboard.php" class="button">NAW Gegevens</a>
-<a href="/brofit/voortgang.php" class="button">Voortgang</a>
+    <a href="/brofit/dashboard.php" class="button">NAW Gegevens</a>
+    <a href="/brofit/voortgang.php" class="button">Voortgang</a>
+    <a href="mailto:brofit.info@gmail.com" class="button">Advies</a>
 </div>
 </body>
 </html>

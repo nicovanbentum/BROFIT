@@ -14,6 +14,10 @@ $valuesArray=array('klantid'=>$klantid);
 $selNAWSql="SELECT naam, adres, woonplaats FROM klant WHERE klantid=:klantid";
 $klantinfo=Query($selNAWSql, $valuesArray)[0];
 
+$showNaam=$klantinfo['naam'];
+$showAdres=$klantinfo['adres'];
+$showWoonplaats=$klantinfo['woonplaats'];
+
 ?>
 
 <!doctype html>
@@ -37,19 +41,18 @@ $klantinfo=Query($selNAWSql, $valuesArray)[0];
           accept-charset="UTF-8">
         <h1>NAW Gegevens</h1>
         <input required type="hidden" name='submitted' id='submitted' value='1'/>
-        <input required type="text" name = "naam" id="naam" placeholder="naam"/>
+        <label for="naam">Naam:</label>
+        <input required type="text" name = "naam" id="naam" placeholder="<?php echo $showNaam;?>"/>
         <br>
-        <input required type="text" name = "adres" id="adres" placeholder = "adres" value=""/>
+        <label for="adres">Adres:</label>
+        <input required type="text" name = "adres" id="adres" placeholder = "<?php echo $showAdres;?>" value=""/>
         <br>
-        <input required type="text" name = "woonplaats" id="woonplaats" placeholder = "woonplaats" value="" />
+        <label for="woonplaats">Woonplaats:</label>
+        <input required type="text" name = "woonplaats" id="woonplaats" placeholder = "<?php echo $showWoonplaats;?>" value="" />
         <br>
         <input required type="submit" name = "submit" value = "gegevens bijwerken" />
     </form>
 </div>
-
-<p><?php
-    print_r($klantinfo, true)
-    ?></p>
 
 </div>
 </body>
