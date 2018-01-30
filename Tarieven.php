@@ -11,6 +11,7 @@
 
 <?php
 session_start();
+//checkt of ingelogde sessie bestaat
 if(isset($_SESSION['gebruikersnaam'])) {
     include_once("sessionHeader.html");
 } else {

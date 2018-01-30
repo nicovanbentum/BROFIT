@@ -5,12 +5,14 @@ session_start();
 require_once("connect.php");
 require_once("Query.php");
 
+//checkt of ingelogde sessie bestaat
 if(isset($_SESSION['gebruikersnaam'])) {
     include_once("sessionHeader.html");
 } else {
     include_once("header.html");
 }
 
+//faciliteit en hoeveelheid ophalen
 $klantid=$_SESSION['klantid'];
 $klantidArray=array('klantid'=>$klantid);
 $selAantalSQL="SELECT a.*, f.naam as fnaam FROM activiteit a LEFT JOIN faciliteit f ON f.faciliteitid = a.faciliteitid WHERE klantid=:klantid AND a.faciliteitid = :faciliteitid";
@@ -18,10 +20,13 @@ $selAantalSQL="SELECT a.*, f.naam as fnaam FROM activiteit a LEFT JOIN facilitei
 $faciliteiten = "SELECT * FROM faciliteit";
 $faciliteitenArray = Query($faciliteiten);
 $hoeveelheden = array();
+
 foreach($faciliteitenArray as $key=>$faciliteit){
     $values = array('klantid'=>$klantid, 'faciliteitid'=>$faciliteit['faciliteitid']);
     $hoeveelheden[$key] = Query($selAantalSQL, $values);
 }
+
+//gemiddelde ophalen
 $sql = "SELECT AVG(a.hoeveelheid) as gemiddeld,  f.naam as fnaam FROM activiteit a LEFT JOIN faciliteit f ON f.faciliteitid = a.faciliteitid WHERE klantid=:klantid GROUP BY a.faciliteitid";
 $average = Query($sql, array('klantid'=>$klantid))[0];
 ?>

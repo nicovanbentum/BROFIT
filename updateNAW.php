@@ -7,9 +7,11 @@ require_once("Query.php");
 
 $gebruikersnaam=$_SESSION['gebruikersnaam'];
 
+//klantid ophalen
 $selsql= "SELECT klantid FROM user WHERE username = :gebruikersnaam";
 $selKlantid=Query($selsql, array('gebruikersnaam'=>$gebruikersnaam))[0];
 
+//POST ophalen en assignen
 $naam=$_POST['naam'];
 $adres=$_POST['adres'];
 $woonplaats=$_POST['woonplaats'];

@@ -4,6 +4,7 @@ require_once("connect.php");
 require_once("Query.php");
 
 session_start();
+//check of er een ingelogde sessie bestaat
 if(isset($_SESSION['gebruikersnaam'])) {
     include_once("sessionHeader.html");
 } else {

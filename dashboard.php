@@ -3,17 +3,20 @@ session_start();
 require_once("connect.php");
 require_once("Query.php");
 
+//check of er een ingelogde sessie bestaat
 if(isset($_SESSION['gebruikersnaam'])) {
     include_once("sessionHeader.html");
 } else {
     include_once("header.html");
 }
 
+//haal klantid op, selecteer NAW op basis van klantid, ken het toe aan een variable
 $klantid=$_SESSION['klantid'];
 $valuesArray=array('klantid'=>$klantid);
 $selNAWSql="SELECT naam, adres, woonplaats FROM klant WHERE klantid=:klantid";
 $klantinfo=Query($selNAWSql, $valuesArray)[0];
 
+//assign variables voor in de html
 $showNaam=$klantinfo['naam'];
 $showAdres=$klantinfo['adres'];
 $showWoonplaats=$klantinfo['woonplaats'];

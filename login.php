@@ -7,14 +7,16 @@ require_once("Query.php");
 
 $gebruikersnaam=$_POST['user'];
 
+//klantid ophalen
 $selsql= "SELECT klantid FROM user WHERE username = :gebruikersnaam";
 $selKlantid=Query($selsql, array('gebruikersnaam'=>$gebruikersnaam))[0];
 
-//session data , session_destroy voor logout
+//session data voor later gebruik
 $_SESSION['klantid']=$selKlantid['klantid'];
 $_SESSION['gebruikersnaam']=$gebruikersnaam;
 $_SESSION['wachtwoord']=$_POST['password'];
 
+//hashed wachtwoord ophalen
 $wwselsql= "SELECT `password` FROM `user` WHERE `username` = :gebruikersnaam";
 $selWachtwoord=Query($wwselsql, array('gebruikersnaam'=>$gebruikersnaam))[0];
 
@@ -22,7 +24,7 @@ $selWachtwoord=Query($wwselsql, array('gebruikersnaam'=>$gebruikersnaam))[0];
 //checkt pw overeenkomst
 $result=password_verify($_POST['password'], $selWachtwoord['password']);
 
-//final submit
+//final submit, checkt voor bad log in
 if(isset($_POST['submit']) and $result == true){
     header('Location: buttonsDashboard.php');
 } else {
