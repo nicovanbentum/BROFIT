@@ -40,12 +40,12 @@ if(isset($_SESSION['gebruikersnaam'])) {
 </div>
 <div class="sum">
     <h2>Machines</h2>
-    <h3>Loopband</h3>
-        <img height="320" width="240" src="https://escdn.nl/images/upload/57abd2dec5d5b9f7ff0a74a8d73ffe80.jpeg">
+    <h3>Roeimachine</h3>
+        <img height="320" width="300" src="https://static.webshopapp.com/shops/006166/files/036731296/228x228x2/hammer-cobra-xt-roeitrainer.jpg">
     <h3>Leg Press</h3>
-        <img height="320" width="240" src="https://4.imimg.com/data4/BH/TW/MY-3142623/leg-press-machine-500x500.jpg">
+        <img height="320" width="280" src="https://4.imimg.com/data4/BH/TW/MY-3142623/leg-press-machine-500x500.jpg">
     <h3>Lat Machine</h3>
-    <img height="320" width="240" id="image" src="https://sep.yimg.com/ay/fitnessgiant/body-solid-dpls-sf-pro-dual-vertical-press-lat-machine-28.png">
+    <img height="320" width="270" id="image" src="https://sep.yimg.com/ay/fitnessgiant/body-solid-dpls-sf-pro-dual-vertical-press-lat-machine-28.png">
 </div>
 </body>
 </html>

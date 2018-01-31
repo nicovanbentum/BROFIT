@@ -16,6 +16,7 @@ if(isset($_SESSION['gebruikersnaam'])) {
 $klantid=$_SESSION['klantid'];
 $klantidArray=array('klantid'=>$klantid);
 $selAantalSQL="SELECT a.*, f.naam as fnaam FROM activiteit a LEFT JOIN faciliteit f ON f.faciliteitid = a.faciliteitid WHERE klantid=:klantid AND a.faciliteitid = :faciliteitid";
+
 //$aantalArray=Query($selAantalSQL, $klantidArray);
 $faciliteiten = "SELECT * FROM faciliteit";
 $faciliteitenArray = Query($faciliteiten);
