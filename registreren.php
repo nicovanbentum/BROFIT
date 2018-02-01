@@ -25,14 +25,21 @@ include_once("header.html");
       <input type="hidden" name='submitted' id='submitted' value='1'/>
       <input type="text" name = "naam" id="naam" placeholder = "naam" />
       <br>
-      <input type="text" name = "adres" id="adres" placeholder = "adres" />
+      <input type="text" name = "adres" id="adres" placeholder = "huisnummer" />
       <br>
-      <input type="text" name = "woonplaats" id="woonplaats" placeholder = "woonplaats" />
+      <input type="text" name = "woonplaats" id="woonplaats" placeholder = "postcode" />
       <br>
       <input type="text" name = "geslacht" id="geslacht" placeholder = "geslacht" />
       <br>
       <input type="text" name = "email" id="email" placeholder = "e-mail" />
       <br>
+      <input type="text" name = "iban" id="iban" placeholder="iban"/>
+      <br>
+      <select name="Abbo">
+          <option value="2" name="basic">Basic abo</option>
+          <option value="3" name="student">Student abo</option>
+          <option value="4" name="daluren">Daluren abo</option>
+      </select>
       <input type="text" name = "username" id="username" placeholder = "gebruikersnaam" />
       <br>
       <input type="password" name = "password" id="password" placeholder = "wachtwoord" />

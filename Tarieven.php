@@ -75,7 +75,7 @@ if(isset($_SESSION['gebruikersnaam'])) {
 <div class="main">
     <h3>Toelichting</h3>
     <p>
-        Daluren<br>Ma-Vr: 7:00-17:00<br>Weekend: 9:00-16:00
+        Daluren<br>Ma-Vr: 10:00-17:00<br>Weekend: 10:00-16:00
     </p>
     <p>De betalingen worden eenmaal per maand van uw rekening afgeschreven. Dit doen wij iedere keer op de 1e van de maand.
     Zo willen wij ervoor zorgen dat klanten een duidelijk overzicht hebben van de financien gekoppeld aan de sportschool.

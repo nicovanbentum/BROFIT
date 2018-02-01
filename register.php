@@ -13,10 +13,12 @@ $naam=$_POST['naam'];
 $adres=$_POST['adres'];
 $woonplaats=$_POST['woonplaats'];
 $geslacht=$_POST['geslacht'];
+$iban=$_POST['iban'];
+$lidmaatschapid=$_POST['Abbo'];
 
 //db klant updaten met ingevoerde gegevens
-$valuesRegister2 = array('naam'=>$naam, 'adres'=>$adres, 'woonplaats'=>$woonplaats, 'geslacht'=>$geslacht);
-$sqlRegister2 = "INSERT INTO klant (naam, adres, woonplaats, geslacht, lidsinds) VALUES (:naam, :adres, :woonplaats, :geslacht, NOW())";
+$valuesRegister2 = array('naam'=>$naam, 'adres'=>$adres, 'woonplaats'=>$woonplaats, 'geslacht'=>$geslacht, 'iban'=>$iban, 'lidmaatschapid'=>$lidmaatschapid);
+$sqlRegister2 = "INSERT INTO klant (naam, adres, woonplaats, geslacht, iban, lidmaatschapid, lidsinds) VALUES (:naam, :adres, :woonplaats, :geslacht, :iban, :lidmaatschapid, NOW())";
 
 Query($sqlRegister2, $valuesRegister2, false, false, true);
 

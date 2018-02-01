@@ -29,7 +29,7 @@ foreach($faciliteitenArray as $key=>$faciliteit){
 
 //gemiddelde ophalen
 $sql = "SELECT AVG(a.hoeveelheid) as gemiddeld,  f.naam as fnaam FROM activiteit a LEFT JOIN faciliteit f ON f.faciliteitid = a.faciliteitid WHERE klantid=:klantid GROUP BY a.faciliteitid";
-$average = Query($sql, array('klantid'=>$klantid))[0];
+$average = Query($sql, array('klantid'=>$klantid));
 ?>
 
 <!doctype html>
@@ -57,7 +57,7 @@ $average = Query($sql, array('klantid'=>$klantid))[0];
             <th>Aantal</th>
         </tr>
         <?php foreach($value as $k=>$v){ ?>
-            <tr>
+            <tr style="border-bottom: 1px solid black;">
                 <td><?= $v['fnaam']?></td>
                 <td><?= $v['hoeveelheid'] ?></td>
             </tr>
@@ -67,16 +67,18 @@ $average = Query($sql, array('klantid'=>$klantid))[0];
     }
 ?>
 </div>
-
+<hr>    
 <table>
     <tr>
         <th>Machine</th>
         <th>Gemiddelde</th>
     </tr>
-    <tr>
-        <td><?= $average['fnaam'] ?></td>
-        <td><?= round($average['gemiddeld']) ?></td>
+    <?php foreach($average as $avg){ ?>
+    <tr style="border-bottom: 1px solid black">
+        <td><?= $avg['fnaam'] ?></td>
+        <td><?= round($avg['gemiddeld']) ?></td>
     </tr>
+    <?php } ?>
 </table>
 
 <!--<p>--><?php /*echo highlight_string("<?php\n\$data =\n" . var_export($average, true) . ";\n?>"); */?><!--</p>-->
