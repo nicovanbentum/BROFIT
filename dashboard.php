@@ -47,10 +47,10 @@ $showWoonplaats=$klantinfo['woonplaats'];
         <label for="naam">Naam:</label>
         <input required type="text" name = "naam" id="naam" placeholder="<?php echo $showNaam;?>"/>
         <br>
-        <label for="adres">Adres:</label>
+        <label for="adres">Huisnummer:</label>
         <input required type="text" name = "adres" id="adres" placeholder = "<?php echo $showAdres;?>" value=""/>
         <br>
-        <label for="woonplaats">Woonplaats:</label>
+        <label for="woonplaats">Postcode:</label>
         <input required type="text" name = "woonplaats" id="woonplaats" placeholder = "<?php echo $showWoonplaats;?>" value="" />
         <br>
         <input required type="submit" name = "submit" value = "gegevens bijwerken" />
